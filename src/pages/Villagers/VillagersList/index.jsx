@@ -22,7 +22,7 @@ function VillagersList() {
             name: '',
             color: 'var(--color-primary)',
         })
-    }, [])
+    }, [setFilters])
 
     function MatchFilters(villager) {
         if (

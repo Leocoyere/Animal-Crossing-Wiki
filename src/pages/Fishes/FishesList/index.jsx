@@ -22,7 +22,7 @@ function FishesList() {
             name: '',
             color: 'var(--color-primary)',
         })
-    }, [])
+    }, [setFilters])
 
     function MatchFilters(fish) {
         if (

@@ -22,7 +22,7 @@ function CreaturesList() {
             name: '',
             color: 'var(--color-primary)',
         })
-    }, [])
+    }, [setFilters])
 
     function MatchFilters(creature) {
         if (

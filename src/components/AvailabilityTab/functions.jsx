@@ -23,16 +23,16 @@ export function getAvailabilityTime(data, setAvailabilityTime) {
     let northTab = {}
     let southTab = {}
 
-    Object.entries(data.north.times_by_month).map((element) => {
+    Object.entries(data.north.times_by_month).map((element) =>
         northTab[`${element[0]}`] = getHoursOfAvailability(element)
-    })
+    )
     setAvailabilityTime((prevState) => {
         let newState = { ...prevState, north: northTab }
         return newState
     })
-    Object.entries(data.south.times_by_month).map((element) => {
+    Object.entries(data.south.times_by_month).map((element) =>
         southTab[`${element[0]}`] = getHoursOfAvailability(element)
-    })
+    )
     setAvailabilityTime((prevState) => {
         let newState = { ...prevState, south: southTab }
         return newState

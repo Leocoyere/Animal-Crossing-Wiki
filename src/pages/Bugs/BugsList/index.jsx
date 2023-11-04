@@ -22,7 +22,7 @@ function BugsList() {
             name: '',
             color: 'var(--color-primary)',
         })
-    }, [])
+    }, [setFilters])
 
     function MatchFilters(bug) {
         if (
