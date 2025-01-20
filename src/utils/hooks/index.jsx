@@ -14,7 +14,7 @@ export function useFetch(url) {
                 const response = await fetch(url, {
                     method: 'GET',
                     headers: {
-                        'X-API-KEY': '97529230-88e4-4a40-8406-549586218454',
+                        'X-API-KEY': '',
                         'Accept-Version': '1.4.0',
                     },
                 })
